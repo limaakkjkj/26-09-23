@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="stopots.js"></script>
+    <link rel="stylesheet" href="stopots.css">
+    <title>Stopots - Tela de Entrada</title>
+</head>
+<body>
+    <div class="container" id="tela1">
+        <h1>Bem-vindo ao Stopots!</h1>
+        <p>Informe seu nome de usuário:</p>
+        <input type="text" id="nomeUsuarioInput" placeholder="Nome de Usuário">
+        <p>Informe sua senha:</p>
+        <input type="password" id="senhaInput" placeholder="Senha">
+        <button onclick="confirmarCredenciais()">Entrar</button>
+    </div>
+
+    <div class="container" id="tela2" style="display: none;">
+        <h1>Confirmação</h1>
+        <p>Nome de usuário: <span id="nomeUsuarioConfirmado"></span></p>
+        <button onclick="iniciarJogo()">Jogar</button>
+    </div>
+
+    <div class="container" id="tela3" style="display: none;">
+        <h1>Sorteio da Letra</h1>
+        <p>A letra sorteada é: <span id="letraSorteada"></span></p>
+        <button onclick="exibirResposta()">Responder</button>
+    </div>
+    
+    <div class="container" id="tela4" style="display: none;">
+        <h1>Resposta</h1>
+        <ul>
+            <li>Nome:
+                <input type="text" id="frutaInput" placeholder="Sua Resposta">
+            </li>
+            <li>Cor:
+                <input type="text" id="corInput" placeholder="Sua Resposta">
+            </li>
+            <li>Carro:
+                <input type="text" id="carroInput" placeholder="Sua Resposta">
+            </li>
+            <li>CEP:
+                <input type="text" id="cepInput" placeholder="Sua Resposta">
+            </li>
+            <!-- Adicione mais perguntas conforme necessário -->
+        </ul>
+        <button onclick="verificarRespostas()">Stop</button>
+    </div>
+
+    <div class="container" id="tela5" style="display: none;">
+        <h1>Regras do Stopots</h1>
+        <ul>
+            <!-- Aqui você pode adicionar as regras do jogo -->
+            <li>Regra 1:...</li>
+            <li>Regra 2:...</li>
+            <li>Regra 3:...</li>
+            <!-- Adicione mais regras conforme necessário -->
+        </ul>
+        <button onclick="voltarParaTelaAnterior()">Voltar</button>
+    </div>
+    
+
+</body>
+</html>
